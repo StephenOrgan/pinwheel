@@ -1,8 +1,10 @@
 class SigninController < ApplicationController
-	before_action :authrorize_access_request!, only: [:destroy]
+	before_action :authorize_access_request!, only: [:destroy]
 
 
 	def create
+	@account = Account.find_by(subdomain: (subdomain_name))
+	set_current_tenant(@account)
 	user = User.find_by(email:params[:email])
 
 	if user.authenticate(params[:password])
@@ -15,7 +17,7 @@ class SigninController < ApplicationController
 			secure: Rails.env.production?)
 		render json: { csrf: tokens[:csrf]}
 	else
-		not_authrorized
+		not_authorized
 	end
 end
 
@@ -30,6 +32,18 @@ end
 
 	def not_found
 		render json: { error: "Cannot find email/password combination" }, status: :not_found
+	end
+
+	def all_params
+		params.require(:signin).permit(:email, :password, :subdomain)
+	end
+
+	def user_params
+		params.require(:signin).permit(:email, :password)
+	end
+
+	def subdomain_name
+		params.require(:subdomain).split('.').first
 	end
 
 end

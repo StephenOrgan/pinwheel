@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueAxios from 'vue-axios'
+import VueAuthenticate from 'vue-authenticate'
 import './main.css'
 import { securedAxiosInstance, plainAxiosInstance } from './backend/axios'
 
@@ -14,6 +15,17 @@ Vue.use(VueAxios, {
   plain: plainAxiosInstance
 })
 
+Vue.use(VueAuthenticate, {
+  baseUrl: 'http://localhost:3000', // Your API domain
+
+  providers: {
+    github: {
+      clientId: '',
+      redirectUri: 'http://localhost:8080/auth/callback' // Your client app URL
+    }
+  }
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -21,5 +33,12 @@ new Vue({
   securedAxiosInstance,
   plainAxiosInstance,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  methods: {
+    authenticate: function (provider) {
+      this.$auth.authenticate(provider).then(function () {
+        // Execute application logic after successful social authentication
+      })
+    }
+  }
 })

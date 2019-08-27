@@ -1,10 +1,15 @@
+require 'uri'
+
 class SignupController < ApplicationController
   set_current_tenant_through_filter
-  before_action :set_account
 
   def create
     # user_account = Account.find(params[:account_id])
     # user = user_account.users.build(user_params)
+
+
+    @account = Account.find_by(subdomain: (subdomain_name))
+    set_current_tenant(@account)
     user = User.new(user_params)
 
 
@@ -27,13 +32,16 @@ class SignupController < ApplicationController
 
   private
 
-    def user_params
-      params.permit(:email, :password, :password_confirmation)
+    def all_params
+      params.require(:signup).permit(:email, :password, :password_confirmation, :subdomain)
     end
 
-    def set_account
-  		@account = Account.find_by(subdomain: request.subdomain)
-  		set_current_tenant(@account)
-  	end
+    def user_params
+      params.require(:signup).permit(:email, :password, :password_confirmation)
+    end
+
+    def subdomain_name
+      params.require(:subdomain).split('.').first
+    end
 
 end

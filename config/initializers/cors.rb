@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://pinwheel.pinwheelintegrations.local:16461'
+    origins 'http://pinwheel2.pinwheelintegrations.local:26207'
 
     resource '*',
       headers: :any,

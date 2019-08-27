@@ -7,10 +7,6 @@ class ApplicationController < ActionController::API
 
 	private
 
-	def require_account!
-    redirect_to root_url(subdomain: "www") if !@account.present?
-  end
-	
 	def set_account
 		@account = Account.find_by(subdomain: request.subdomain)
 		set_current_tenant(@account)
@@ -21,7 +17,7 @@ class ApplicationController < ActionController::API
 	end
 
 
-	def not_auhorized
+	def not_authorized
 		render json: {error: 'Not authorized' }, status: :unauthorized
 	end
 end

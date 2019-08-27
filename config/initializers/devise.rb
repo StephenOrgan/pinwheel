@@ -8,7 +8,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '60b13bd35ba4a697f8c4db45dc417023542c35ab26f1937485df82335fc1ae80401f303b3debae3e987dd01212a9f80b6f2065ea8cf71a961f76e63d223f813d'
+  config.secret_key = '60b13bd35ba4a697f8c4db45dc417023542c35ab26f1937485df82335fc1ae80401f303b3debae3e987dd01212a9f80b6f2065ea8cf71a961f76e63d223f813d'
 
 
   # Google Setup
@@ -56,7 +56,7 @@ Devise.setup do |config|
   # find_for_authentication method and considered in your model lookup. For instance,
   # if you set :request_keys to [:subdomain], :subdomain will be used on authentication.
   # The same considerations mentioned for authentication_keys also apply to request_keys.
-  # config.request_keys = []
+  config.request_keys = []
 
   # Configure which authentication keys should be case-insensitive.
   # These keys will be downcased upon creating or modifying a user and when used

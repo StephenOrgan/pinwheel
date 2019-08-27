@@ -20,8 +20,15 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-# Ignore secrets
-.secrets.yml
+# Ignore all yml files
+**.yml
 
 # Ignore JWT Token
-.jwt_sessions.rb
+**/jwt_sessions.rb
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
