@@ -8,14 +8,18 @@ class ApplicationController < ActionController::API
 	private
 
 	def set_account
-		@account = Account.find_by(subdomain: request.subdomain)
-		set_current_tenant(@account)
+	  if request.subdomain.present?
+			@account = Account.find_by(subdomain: request.subdomain)
+	  	set_current_tenant(@account)
+		elsif @current_user.present?
+			@account = Account.find(@current_user.account.id)
+			set_current_tenant(@account)
+		end
 	end
 
 	def current_user
 		@current_user ||= User.find(payload['user_id'])
 	end
-
 
 	def not_authorized
 		render json: {error: 'Not authorized' }, status: :unauthorized

@@ -1,5 +1,4 @@
 import axios from 'axios'
-
 const API_URL = 'http://pinwheelintegrations.local:3000'
 
 const securedAxiosInstance = axios.create({

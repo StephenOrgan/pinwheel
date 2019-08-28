@@ -3,10 +3,14 @@ class SigninController < ApplicationController
 
 
 	def create
+  # set the tenant
 	@account = Account.find_by(subdomain: (subdomain_name))
 	set_current_tenant(@account)
+
+	# find user with the email passed in the form
 	user = User.find_by(email:params[:email])
 
+	# if credentials accepted set the authorized header, otherwise not authorized
 	if user.authenticate(params[:password])
 		payload = {user_id: user.id}
 		session = JWTSessions::Session.new(payload: payload, refresh_by_access_allowed: true)

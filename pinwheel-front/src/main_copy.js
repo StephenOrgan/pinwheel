@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-// import axios from 'axios'
+import axios from 'axios'
 import VueAxios from 'vue-axios'
 import VueAuthenticate from 'vue-authenticate'
 import './main.css'
@@ -22,7 +22,7 @@ Vue.use(VueAuthenticate, {
   providers: {
     github: {
       name: 'github',
-      clientId: 'XXXXXXXX',
+      clientId: 'XXXXXXXXX',
       url: '/auth/github',
       authorizationEndpoint: 'https://github.com/login/oauth/authorize',
       redirectUri: 'http://localhost:8080/auth/callback',
