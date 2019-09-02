@@ -27,7 +27,9 @@ end
     get "pinwheel_sign_in", controller: :pinwheel_sessions, action: :new
     post "signup", controller: :signup, action: :create
     post "refresh", controller: :refresh, action: :create
-  	post "signin", controller: :signin, action: :create
-  	post "signup", controller: :signup, action: :create
+  	post "auth/login", controller: :signin, action: :create
+    get 'auth/admin/callback/github', controller: :superadmin, action: :create
+    post "signin", controller: :signin, action: :create
+    post "signup", controller: :signup, action: :create
   	delete "signin", controller: :signin, action: :destroy
 end

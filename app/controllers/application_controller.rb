@@ -8,12 +8,12 @@ class ApplicationController < ActionController::API
 	private
 
 	def set_account
-	  if request.subdomain.present?
-			@account = Account.find_by(subdomain: request.subdomain)
-	  	set_current_tenant(@account)
-		elsif @current_user.present?
+	  if @current_user.present?
 			@account = Account.find(@current_user.account.id)
 			set_current_tenant(@account)
+		 elsif request.subdomain.present?
+			 @account = Account.find_by(subdomain: request.subdomain)
+	  	 set_current_tenant(@account)
 		end
 	end
 

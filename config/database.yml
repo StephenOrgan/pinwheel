@@ -10,7 +10,7 @@ default: &default
   encoding: utf8
   schema_search_path: "public,hstore,extensions"
   username: stephenorgan
-  password:
+  password: 
   timeout: 5000
 
 development:

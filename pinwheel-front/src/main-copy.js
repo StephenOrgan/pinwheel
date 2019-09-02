@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import axios from 'axios'
 import VueAxios from 'vue-axios'
 import VueAuthenticate from 'vue-authenticate'
 import './main.css'
@@ -11,7 +10,7 @@ import { securedAxiosInstance, plainAxiosInstance } from './backend/axios'
 
 Vue.config.productionTip = false
 
-Vue.use(VueAxios, axios, {
+Vue.use(VueAxios, {
   secured: securedAxiosInstance,
   plain: plainAxiosInstance
 })

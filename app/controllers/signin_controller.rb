@@ -4,8 +4,8 @@ class SigninController < ApplicationController
 
 	def create
   # set the tenant
-	@account = Account.find_by(subdomain: (subdomain_name))
-	set_current_tenant(@account)
+	# @account = Account.find_by(subdomain: (subdomain_name))
+	# set_current_tenant(@account)
 
 	# find user with the email passed in the form
 	user = User.find_by(email:params[:email])
@@ -18,6 +18,8 @@ class SigninController < ApplicationController
 		response.set_cookie(JWTSessions.access_cookie,
 			value: tokens[:access],
 			httponly: true,
+			expires: 30.minutes.from_now,
+			path: '/',
 			secure: Rails.env.production?)
 		render json: { csrf: tokens[:csrf]}
 	else

@@ -7,9 +7,13 @@ gem 'rails', '~> 5.1'
 
 group :development, :test do
 	gem 'pry'
-  gem 'pg', '~> 0.18'
+  # gem 'pg', '~> 0.18'
+	gem 'sqlite3', '~> 1.3.0'
 end
 
+group :production, :test do
+	gem 'pg', '~> 0.18'
+end
 # Sidekiq schtuff
 gem 'sidekiq', '~> 3.3.4'
 gem 'sidekiq-limit_fetch'
