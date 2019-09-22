@@ -1,0 +1,75 @@
+[{
+  "id": "aa1a9c07-ed05-476a-a2ec-164fc08b1b68",
+  "name": "Salesforce.com",
+  "key" "sfdc",
+  "active" true,
+  "default": false,
+  "description" "blah blah blah blah",
+  "group": "customer"
+  "oauth": true,
+  "image": "elements/provider_sfdc.png",
+  "config": [{
+      "id": 176,
+      "name": "Login/Token URL",
+      "key": "sfdc.token.url",
+      "description": "Use https://test.salesforce.com/services/oauth2/token for the SFDC sandbox environment",
+      "defaultValue": "https://login.salesforce.com/services/oauth2/token",
+      "resellerConfig": false,
+      "companyConfig": false,
+      "active": false,
+      "internal": false,
+      "groupControl": false,
+      "displayOrder": 3,
+      "type": "TEXTFIELD_128",
+      "hideFromConsole": true,
+      "required": false
+    }],
+  "oauth_config": {
+  "client_id": "XXXXXXXXXXXX",
+  "callbackURL": "http://customer.pinwheelintegrations.io/oauth/callback/sfdc"
+  },
+  "external_config": {
+  },
+  "user_or_company_instances": [{
+    "id": "90902650-ec91-4096-9135-bf28c01a8135", 
+    "user_id": "5c12062f-127d-4a02-a03b-adb72e2deac8", 
+    "customer_id": "f18a846a-ee6e-4f0d-9358-16a387191016"
+  }]
+},
+{
+  "id": "edb8b44c-07be-431a-a321-e594e47bb602",
+  "name": "Oracle Eloqua",
+  "key" "eloqua",
+  "active" true,
+  "default": false,
+  "description" "blah blah blah blah",
+  "group": "customer"
+  "oauth": true,
+  "image": "elements/provider_sfdc.png",
+  "config": [{
+      "id": 454,
+      "name": "Oauth 2 Token URL",
+      "key": "oauth.token.url",
+      "description": "OAuth 2 Token URL",
+      "defaultValue": "https://login.eloqua.com/auth/oauth2/token",
+      "resellerConfig": false,
+      "companyConfig": false,
+      "active": true,
+      "internal": true,
+      "groupControl": false,
+      "displayOrder": 8,
+      "type": "TEXTFIELD_128",
+      "hideFromConsole": true,
+      "required": false
+    }],
+  "oauth_config": {
+  "client_id": "XXXXXXXXXXXX",
+  "callbackURL": "http://customer.pinwheelintegrations.io/oauth/callback/eloqua"
+  },
+  "external_config": {
+  },
+  "user_or_company_instances": [{
+    
+  }]
+}
+]
