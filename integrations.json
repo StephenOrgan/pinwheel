@@ -45,7 +45,7 @@
   "description": "blah blah blah blah",
   "group": "customer",
   "oauth": true,
-  "image": "elements/provider_sfdc.png",
+  "image": "elements/provider_eloqua.png",
   "config": [{
       "id": 454,
       "name": "Oauth 2 Token URL",
