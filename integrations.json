@@ -1,11 +1,11 @@
 [{
   "id": "aa1a9c07-ed05-476a-a2ec-164fc08b1b68",
   "name": "Salesforce.com",
-  "key" "sfdc",
-  "active" true,
+  "key": "sfdc",
+  "active": true,
   "default": false,
-  "description" "blah blah blah blah",
-  "group": "customer"
+  "description": "blah blah blah blah",
+  "group": "customer",
   "oauth": true,
   "image": "elements/provider_sfdc.png",
   "config": [{
@@ -39,11 +39,11 @@
 {
   "id": "edb8b44c-07be-431a-a321-e594e47bb602",
   "name": "Oracle Eloqua",
-  "key" "eloqua",
-  "active" true,
+  "key": "eloqua",
+  "active": true,
   "default": false,
-  "description" "blah blah blah blah",
-  "group": "customer"
+  "description": "blah blah blah blah",
+  "group": "customer",
   "oauth": true,
   "image": "elements/provider_sfdc.png",
   "config": [{
