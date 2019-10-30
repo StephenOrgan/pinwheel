@@ -54,7 +54,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'hashie'
-gem 'devise', '~> 4.3.0'
+gem 'devise', '~> 4.7.1'
 gem 'omniauth-google-oauth2', '~> 0.2.2'
 gem 'acts_as_tenant'
 gem 'webpacker'
