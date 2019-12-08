@@ -650,7 +650,7 @@
     "scss-tokenizer": "^0.2.3",
     "schema-utils": "^1.0.0",
     "semver": "^5.7.1",
-    "serialize-javascript": "^1.8.0",
+    "serialize-javascript": "^2.1.1",
     "send": "^0.17.1",
     "set-blocking": "^2.0.0",
     "select-hose": "^2.0.0",
