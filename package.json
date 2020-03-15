@@ -8,7 +8,7 @@
     "test": "test"
   },
   "dependencies": {
-    "acorn": "^6.3.0",
+    "acorn": "^6.4.1",
     "ajv-errors": "^1.0.1",
     "abbrev": "^1.1.1",
     "ajv": "^6.10.2",
