@@ -421,7 +421,7 @@
     "minimatch": "^3.0.4",
     "mississippi": "^3.0.0",
     "minimalistic-assert": "^1.0.1",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.2",
     "minipass": "^2.4.0",
     "mixin-deep": "^1.3.2",
     "minizlib": "^1.2.1",
