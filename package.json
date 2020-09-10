@@ -290,7 +290,7 @@
     "html-comment-regex": "^1.1.2",
     "http-errors": "^1.7.2",
     "http-deceiver": "^1.2.7",
-    "http-proxy": "^1.17.0",
+    "http-proxy": "^1.18.1",
     "http-parser-js": "^0.4.10",
     "http-signature": "^1.2.0",
     "http-proxy-middleware": "^0.19.1",
