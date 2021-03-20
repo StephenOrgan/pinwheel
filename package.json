@@ -683,7 +683,7 @@
     "spdx-expression-parse": "^3.0.0",
     "split-string": "^3.1.0",
     "sshpk": "^1.16.1",
-    "ssri": "^6.0.1",
+    "ssri": "^8.0.1",
     "spdx-license-ids": "^3.0.5",
     "spdy-transport": "^3.0.0",
     "sprintf-js": "^1.0.3",
