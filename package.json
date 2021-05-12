@@ -517,7 +517,7 @@
     "postcss-color-hex-alpha": "^5.0.3",
     "postcss-color-gray": "^5.0.0",
     "postcss-color-rebeccapurple": "^4.0.1",
-    "postcss": "^7.0.17",
+    "postcss": "^8.2.10",
     "postcss-custom-selectors": "^5.1.2",
     "postcss-custom-media": "^7.0.8",
     "postcss-color-mod-function": "^3.0.3",
