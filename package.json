@@ -69,7 +69,7 @@
     "browserify-rsa": "^4.0.1",
     "buffer": "^4.9.1",
     "browserify-zlib": "^0.2.0",
-    "browserslist": "^4.6.6",
+    "browserslist": "^4.16.5",
     "browserify-sign": "^4.0.4",
     "buffer-indexof": "^1.1.1",
     "autoprefixer": "^9.6.1",
