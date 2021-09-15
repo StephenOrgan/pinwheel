@@ -657,7 +657,7 @@
     "serve-index": "^1.9.1",
     "selfsigned": "^1.10.4",
     "setprototypeof": "^1.1.1",
-    "set-value": "^2.0.1",
+    "set-value": "^4.0.1",
     "shallow-clone": "^3.0.1",
     "serve-static": "^1.14.1",
     "setimmediate": "^1.0.5",
