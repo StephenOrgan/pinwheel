@@ -447,7 +447,7 @@
     "normalize-path": "^3.0.0",
     "nopt": "^3.0.6",
     "npm-bundled": "^1.0.6",
-    "nth-check": "^1.0.2",
+    "nth-check": "^2.0.1",
     "normalize-url": "^1.9.1",
     "npm-packlist": "^1.4.4",
     "npm-run-path": "^2.0.2",
