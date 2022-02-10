@@ -440,7 +440,7 @@
     "nice-try": "^1.0.5",
     "node-libs-browser": "^2.2.1",
     "node-releases": "^1.1.28",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "neo-async": "^2.6.1",
     "normalize-package-data": "^2.5.0",
     "normalize-range": "^0.1.2",
