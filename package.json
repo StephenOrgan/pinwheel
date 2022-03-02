@@ -748,7 +748,7 @@
     "unquote": "^1.1.1",
     "urix": "^0.1.0",
     "uri-js": "^4.2.2",
-    "url-parse": "^1.4.7",
+    "url-parse": "^1.5.9",
     "use": "^3.1.1",
     "url-parse-lax": "^3.0.0",
     "url-to-options": "^1.0.1",
