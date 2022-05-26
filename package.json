@@ -212,7 +212,7 @@
     "escape-string-regexp": "^1.0.5",
     "expand-tilde": "^2.0.2",
     "execa": "^1.0.0",
-    "eventsource": "^1.0.7",
+    "eventsource": "^2.0.2",
     "expand-brackets": "^2.1.4",
     "extglob": "^2.0.4",
     "evp_bytestokey": "^1.0.3",
