@@ -262,7 +262,7 @@
     "global-prefix": "^3.0.0",
     "globule": "^1.2.1",
     "globby": "^6.1.0",
-    "got": "^8.3.2",
+    "got": "^11.8.5",
     "graceful-fs": "^4.2.2",
     "har-schema": "^2.0.0",
     "handle-thing": "^2.0.0",
