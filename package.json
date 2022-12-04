@@ -153,7 +153,7 @@
     "csso": "^3.5.1",
     "cyclist": "^0.2.2",
     "dashdash": "^1.14.1",
-    "decode-uri-component": "^0.2.0",
+    "decode-uri-component": "^0.2.1",
     "cssnano-util-get-arguments": "^4.0.0",
     "cssnano-util-get-match": "^4.0.0",
     "decamelize": "^1.2.0",
